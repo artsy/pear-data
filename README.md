@@ -1,4 +1,4 @@
-# Artsy's .pear-data 💜
+# Artsy's `.pear-data` 💜
 
 ## Get latest and merge with your local .pear-data
 
