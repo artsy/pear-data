@@ -1,0 +1,19 @@
+name: Generate .pear-data
+on: [pull_request]
+jobs:
+  generate-json:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - run: |
+          ./generate-json.sh
+      - name: Push
+        uses: EndBug/add-and-commit@v7
+        with:
+          author_name: github-actions[bot]
+          author_email: 41898282+github-actions[bot]@users.noreply.github.com
+          message: 'Add generated file'
+          add: '.pear-data'
+
