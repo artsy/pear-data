@@ -14,7 +14,7 @@ curl https://raw.githubusercontent.com/artsy/pear-data/main/.pear-data --output 
 ```
 
 ## Add yourself!
-Simply modify the [`data.csv`]() file with your name, username and email that you use for GitHub, and make a PR. GitHub Actions should take it from there, to generate the actual `.pear-data` json file.
+Simply modify the [`data.csv`](https://github.com/artsy/pear-data/blob/main/data.csv) file with your name, username and email that you use for GitHub, and make a PR. GitHub Actions should take it from there, to generate the actual `.pear-data` json file.
 
 ## Context
 [Jon](https://github.com/jonallured)'s amazing [pear](https://github.com/jonallured/pear) is a tool many of us use, here at Artsy. Often we have new engineers joining us, and we wanted an easy way to add their data to our `.pear-data`. Now we have them all in this repo, and anyone can add more, themselves or others.
