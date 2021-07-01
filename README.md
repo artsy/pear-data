@@ -2,5 +2,5 @@
 
 ```sh
 curl https://raw.githubusercontent.com/artsy/pear-data/main/.pear-data --output /tmp/artsy-pear-data
-jq
+jq -s '{ current: .[0].current, known: (.[1].known + .[0].known) | unique }' ~/.pear-data /tmp/artsy-pear-data
 ```
