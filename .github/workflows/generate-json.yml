@@ -1,5 +1,5 @@
 name: Generate .pear-data
-on: [pull_request]
+on: [pull_request, push]
 jobs:
   generate-json:
     runs-on: ubuntu-latest
